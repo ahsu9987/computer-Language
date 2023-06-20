@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-image: url("background/css\ introduction\ background.jpg");
+            background-size: cover;
+
+            
+            
+            
+        }
+        .intro-head{
+            font-size: 30px;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    margin: 10px;
+    background: -webkit-linear-gradient(#00d8ff 20%,rgb(8 9 245));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+        }
+        .first-div ul {
+            font-size: 20px;
+            grid-gap: 4px 144px;
+            margin: 20px 15px;
+            font-weight: 600;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            color: rgb(217, 255, 0);
+            
+        }
+        .img-1{padding-left: 367px; height: 70px;       }
+        li{
+            color: rgb(231, 231, 231);
+        }
+     .text{
+        text-align: center;
+        margin: 10px;
+        text-decoration: underline 2px solid rgb(4, 151, 248)
+     }
+     .grid-1 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        font-size: 17px;
+        font-weight: 600;
+        font-family:'Times New Roman', Times, serif
+     }
+     .grid {
+        padding-left: 20px;
+    }
+    .types-intro
+    {
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        color: aquamarine;
+        background: -webkit-linear-gradient(rgb(253, 30, 0), rgb(255, 255, 252));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        text-decoration: underline 2px double rgb(250, 253, 252);
+    }
+    .color-chan{
+        color: rgb(247, 183, 175);
+    }
+       
+    </style>
+</head>
+<body>
+    <section id="title">
+        <div class="css-heading">
+            <img src="heading/css-tutorious.png" class="img-1" alt=" head-title">
+        </div>
+    </section>
+    <section id="introduction">
+        <div class="first-div">
+            <p class="intro-head">what is css?</p>
+            <ul class="grid">
+                    <li>CSS is the language we use to style a Web page.</li>
+                    <li>CSS stands for Cascading Style Sheets</li>
+                   <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                   <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                   <li>External stylesheets are stored in CSS files</li>
+            </ul>
+        </div>
+    </section>
+    <section id="intro-2" style="border-bottom: 2px dotted #00d8ff;">
+        <div class="first-div">
+            <p class="intro-head">css solves many problems</p>
+            <ul class="grid">
+                <li>HTML was NEVER intended to contain tags for formatting a web page!</li>
+
+                   <li> HTML was created to describe the content of a web page, like:<br>
+                    
+                   < h1>This is a heading< /h1></li>
+                    
+                   <li>When tags like < font>, and color attributes were added to the HTML 3.2 specification
+                    , it started a nightmare for web developers.</li>
+                    
+                    <li>To solve this problem, the World Wide Web Consortium (W3C) created CSS.</li>
+                    
+                    
+            </ul>
+        </div>
+    </section>
+    <section id="types">
+        <div class="intro-head">
+            <p class="text">type of css</p>
+        </div>
+        <div class="grid-1">
+            <div>
+                <div class="types-intro">
+                    <p>inline css</p>
+                </div>
+                <div class="para0">
+                    <ul>
+                        <li>An inline CSS is used to apply a unique style to a single HTML element.</li>
+                        <li> An inline CSS uses the style attribute of an HTML element.</li>
+                        <li>syntax:<br><span class="color-chan"><span style="padding-left: 50px;">< htmltag style="cssproperty1:value; cssproperty2:value;"> < /htmltag>    
+                            </span></span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div>
+            <div class="types-intro">
+                <p>internal css</p>
+            </div>
+            <div class="para0">
+                <ul>
+                    <li>An internal CSS is used to define a style for a single HTML page.</li>
+                    <li> An internal CSS is defined in the < head> section of an HTML page, within a < sty le> element.</li>
+                    <li>syntax:<span class="color-chan"><br><span style="padding-left: 50px;">< head><br><span style="padding-left:70px ;">< sty le><br>body{<br>background-color:red;<br>}<br><span style="padding-left: 70px;">< /style></span><br><span style="padding-left: 50px;">< /head></span>      
+                    </span>
+                    </li>
+
+                </ul>
+            </div>
+            </div>
+            <div>
+            <div class="types-intro">
+                <p>external css</p>
+            </div>
+            <div class="para0">
+                <ul>
+                    <li>An external style sheet is used to define the style for many HTML pages.</li>
+                    <li> To use an external style sheet, add a link to it in the < head> section of each HTML page</li>
+                    <li>syntax:<br><span class="color-chan" style="padding-left: 50px;"> < link rel="stylesheet" href="style.css">    
+                        </span>
+                    </li>
+
+                </ul>
+            </div>
+            </div>
+            
+        </div>
+    </section>
+    <section id="page">
+        <div class="btn1">
+            <a href="index.html"><button class="button1">1</button></a>
+            <a href="page 2.html"><button class="button1">2</button></a>
+            <a href="page 3.html"><button class="button1">3</button></a>
+            <a href="page 4.html"><button class="button1">4</button></a>
+            <a href="CSS-TUTORIALS.html"><button class="button1">5</button></a>
+            <a href="page 6.html"><button class="button1">6</button></a>
+            <a href="page 7.html"><button class="button1">7</button></a>
+            <a href="page 8.html"><button class="button1">8</button></a>
+            <a href="page 9.html"><button class="button1">9</button></a>
+            <a href="javascript Tutorials.html"><button class="button1">10</button></a>
+            <a href="page 11.html"><button class="button1">11</button></a>
+            <a href="page 12.html"><button class="button1">12</button></a>
+            <a href="page13.html"><button class="button1">13</button></a>
+            <a href="page 14.html"><button class="button1">14</button></a>
+            <a href="c-programing toturials.html"><button class="button1">15</button></a>
+            <a href="page 16.html"><button class="button1">16</button></a>
+            <a href="page 17.html"><button class="button1">17</button></a>
+            <a href="page 18.html"><button class="button1">18</button></a>
+            <a href="python tutorials.html"><button class="button1">19</button></a>
+            <a href="page 20.html"><button class="button1">20</button></a>
+            <a href="page 21.html"><button class="button1">21</button></a>
+            <a href="java tutorials.html"><button class="button1">22</button></a>
+            <a href="page 23.html"><button class="button1">23</button></a>
+            <a href="page 24.html"><button class="button1">24</button></a>
+            <a href="page 25.html"><button class="button1">25</button></a>
+            <a href="my sql tutorials.html"><button class="button1">26</button></a>
+            <a href="page 27.html"><button class="button1">27</button></a>
+            <a href="page 28.html"><button class="button1">28</button></a>
+            <a href="page 29.html"><button class="button1">29</button></a>
+            <a href="page 30.html"><button class="button1">30</button></a>
+
+        </div>
+   </section>
+</body>
+</html>
